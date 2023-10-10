@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="telatoda displayflex">
+        <div class="calculadora displayflex">
+            <div class="telaresultado displayflex">
+                <div class="fundopreto displayflex">
+                    <div class="divhistorico">
+                        <label id="labelhistorico">Calculadora</label>
+                    </div>
+                    <div class="divinput displayflex">
+                        <input id="input" type="text" placeholder="0">
+                    </div>
+                </div>
+            </div>
+            <div class="telaoperacoes displayflex">
+                <div class="numeros displayflex">
+                    <button id="AC" class="btn" onclick="AC()">AC</button>
+                    <button id="parents" class="btn operador">( )</button>
+                    <button id="porcentagem" class="btn operador" onclick="Calcular('%')">%</button>
+                    <button id="dividir" class="btn operador" onclick="Calcular('/')">/</button>
+                    <button id="sete" class="btn" onclick="AddNumero('7')">7</button>
+                    <button id="oito" class="btn" onclick="AddNumero('8')" >8</button>
+                    <button id="nove" class="btn" onclick="AddNumero('9')" >9</button>
+                    <button id="vezes" class="btn operador" onclick="Calcular('x')">x</button>
+                    <button id="quatro" class="btn" onclick="AddNumero('4')" >4</button>
+                    <button id="cinco" class="btn" onclick="AddNumero('5')" >5</button>
+                    <button id="seis" class="btn" onclick="AddNumero('6')" >6</button>
+                    <button id="menos" class="btn operador" onclick="Calcular('-')">-</button>
+                    <button id="um" class="btn" onclick="AddNumero('1')" >1</button>
+                    <button id="dois" class="btn" onclick="AddNumero('2')" >2</button>
+                    <button id="tres" class="btn" onclick="AddNumero('3')" >3</button>
+                    <button id="mais" class="btn operador" onclick="Calcular('+')">+</button>
+                    <button id="zero" class="btn" onclick="AddNumero('0')" >0</button>
+                    <button id="virgula" class="btn" onclick="Virgula()">,</button>
+                    <button id="apagar" class="btn" onclick="Apagar()"><i class="bi bi-backspace"></i></button>
+                    <button id="igual" class="btn" onclick="Calcular('=')">=</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/calculadora.js"></script>
+</body>
+</html>
